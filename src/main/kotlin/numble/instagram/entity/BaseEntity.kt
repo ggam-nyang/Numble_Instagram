@@ -1,4 +1,4 @@
-package numble.instagram.domain
+package numble.instagram.entity
 
 import jakarta.persistence.*
 import org.springframework.data.annotation.CreatedDate
