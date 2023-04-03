@@ -20,6 +20,11 @@ spring:
     show-sql: true
     defer-datasource-initialization: true
 
+jwt:
+  header: Authorization
+  secret: 4oCYZ2dhbS1ueWFuZy1zcHJpbmctYm9vdC1qd3QtdHV0b3JpYWwtc2VjcmV0LWdnYW0tbnlhbmctc3ByaW5nLWJvb3Qtand0LXR1dG9yaWFsLXNlY3JldOKAmQo=
+  token-validity-in-seconds: 86400
+
 logging:
   level:
     numble.instagram: DEBUG
