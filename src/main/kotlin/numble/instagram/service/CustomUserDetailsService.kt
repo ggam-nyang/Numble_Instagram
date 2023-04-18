@@ -33,8 +33,8 @@ class CustomUserDetailsService(
             .collect(Collectors.toList())
 
         return User(
-            user.username,
-            user.password,
+            user.nickName,
+            "password",
             grantedAuthorities
         )
     }

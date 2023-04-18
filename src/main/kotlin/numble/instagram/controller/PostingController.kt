@@ -21,7 +21,7 @@ class PostingController {
         @RequestBody request: PostPostingRequest
     ): ResponseEntity<PostPostingResponse> {
         // get userId
-
+        logger.info("Hello~ ")
 
 
         return ResponseEntity(PostPostingResponse(1, "temp", "temp"), HttpStatus.OK)

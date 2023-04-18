@@ -1,5 +1,6 @@
 package numble.instagram.entity
 
+import com.fasterxml.jackson.annotation.JsonIgnore
 import jakarta.persistence.*
 
 @Entity
@@ -22,9 +23,9 @@ class User(
     @OneToMany(mappedBy = "author", fetch = FetchType.EAGER)
     var replies: MutableList<Reply> = arrayListOf(),
 
-//    @Column(name = "activated")
-//    @JsonIgnore
-//    var isActivated: Boolean = false,
+    @Column(name = "activated")
+    @JsonIgnore
+    var isActivated: Boolean = false,
 
     // For auth
     @ManyToMany
